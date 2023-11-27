@@ -41,8 +41,8 @@ class LinkNode(Node):
 
 
 class LinkTree(Tree):
-    def __init__(self, url: str, depth: int, client: httpx.Client) -> None:
-        super().__init__()
+    def _init_(self, url: str, depth: int, client: httpx.Client) -> None:
+        super()._init_()
         self._url = url
         self._depth = depth
         self._client = client
